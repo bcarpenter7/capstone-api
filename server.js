@@ -14,7 +14,7 @@ mongoose.connection.once('open', ()=>{
 app.use(express.json()); 
 app.use(cors())
 
-const apiRouter = require('../api-capstone/routes/api')
+const apiRouter = require('./routes/api')
 
 app.use('/api', apiRouter)
 
